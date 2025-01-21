@@ -6,6 +6,6 @@
 
 <Navbar />
 
-<div class="container-md p-0 pt-5">
+<div class="container-md p-3 pt-5">
 {@render children()}
 </div>

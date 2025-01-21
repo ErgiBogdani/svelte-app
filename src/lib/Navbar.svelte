@@ -2,7 +2,7 @@
 
 </script>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary p-3">
+<nav class="navbar navbar-expand-lg bg-body-tertiary p-3 shadow-sm">
     <div class="container-md">
       <a class="navbar-brand fw-bold pe-4" href="/">CIT Blog</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,7 +14,7 @@
             <a class="nav-link active" aria-current="page" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/">All Posts</a>
+            <a class="nav-link" href="/posts">All Posts</a>
           </li>
         </ul>
         <form class="d-flex" role="search">
