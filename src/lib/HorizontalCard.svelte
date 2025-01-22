@@ -48,7 +48,7 @@
           <div class="col-md-8">
             <div class="card-body">
               <h5 class="card-title my-3">{title}</h5>
-              <p class="card-text">{text.split(" ").slice(0, 50).join(" ") + "..."} </p>
+              <p class="card-text">{text.replace("<br><br>", " ").split(" ").slice(0, 50).join(" ") + "..."} </p>
               <p class="card-text"><small class="text-secondary-emphasis fw-semibold">{new Date(date).toLocaleDateString('en-UK')}</small></p>
             </div>
           </div>

@@ -19,7 +19,7 @@
         <Card 
             img={post.image} 
             title={post.title} 
-            text={post.postBody.split(" ").slice(0, 20).join(" ") + "..."} 
+            text={post.postBody.replace("<br><br>", " ").split(" ").slice(0, 20).join(" ") + "..."} 
             tag={post.tag}
             date={post.date}
             >
