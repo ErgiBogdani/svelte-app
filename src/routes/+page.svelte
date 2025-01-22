@@ -75,7 +75,7 @@
 
   <div class="featured my-5">
     <h2 class="h3">Featured Posts</h2>
-    <div class="d-flex flex-row justify-content-center flex-wrap row-gap-5 column-gap-5 my-5">
+    <div class="d-flex flex-row justify-content-start flex-wrap row-gap-5 column-gap-5 my-5">
         {#each featuredPosts as post}
         <div class="featured-w">
             <HorizontalCard 
