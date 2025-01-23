@@ -18,16 +18,25 @@
         font-weight: 600;
         margin: 1rem 0;
     }
+
+    @media (max-width: 568px) {
+        form {
+            margin: 0 !important;
+            width: 100%;
+            padding: 10px !important;
+        }
+    }
+    
 </style>
 
 
-<form method="POST" class="row g-3 p-5 mx-5 shadow-lg">
+<form method="POST" action="?/update" class="row g-3 p-5 mx-5 shadow-lg">
     <h1 class="h3 my-3 text-center">Create Post</h1>
     <div class="col-md-6">
       <label for="title" class="form-label">Title</label>
       <input type="textas" name="title" class="form-control" id="title" required value={title}>
     </div>
-    <div class="col-6">
+    <div class="col-md-6">
       <label for="ImgSrc" class="form-label">Image Source</label>
       <input type="text" name="img" class="form-control" id="ImgSrc" placeholder="https://" required value={img}>
     </div>
@@ -47,7 +56,8 @@
         </label>
       </div>
     </div>
-    <div class="col-12">
-      <button type="submit" class="btn btn-primary px-5 py-2 fw-medium d-block mx-auto">Update</button>
+    <div class="col-12 d-flex justify-content-center column-gap-3 flex-wrap row-gap-3">
+      <button type="submit" class="btn btn-primary px-5 py-2 fw-medium d-block">Update</button>
+      <button class="btn btn-danger px-5 py-2 fw-medium d-block" formaction="?/delete">Delete</button>
     </div>
   </form>

@@ -20,7 +20,7 @@ export async function load({ params }) {
 }
 
 export const actions = {
-	default: async ({ request }) => {
+	update: async ({ request }) => {
 		const data = await request.formData();
 		let title = data.get('title');
 		let img = data.get('img');
@@ -67,4 +67,22 @@ export const actions = {
 		}
         throw redirect(303, `/posts/${slug}`);
 	},
+
+    delete: async ({ request }) => {
+        try {
+            const filePath = path.resolve('src/lib/data/posts.json');
+            const fileData = await fs.readFile(filePath, 'utf-8');
+            const posts = JSON.parse(fileData);
+
+            // Find the post to delete using the original title stored in `oPost`
+            const updatedPosts = posts.filter((post) => post.title !== oPost);
+
+            // Write the updated array back to the file
+            await fs.writeFile(filePath, JSON.stringify(updatedPosts, null, 2));
+        } catch (error) {
+            console.error('Error deleting post:', error);
+            return { success: false, message: 'Failed to delete post.' };
+        }
+        throw redirect(303, `/`);
+    },
 };
