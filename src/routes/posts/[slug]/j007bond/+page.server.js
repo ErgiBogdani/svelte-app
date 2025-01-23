@@ -11,6 +11,7 @@ export async function load({ params }) {
     const post = posts.find((p) => 
         p.title.toLowerCase().replace(/[^a-z0-9 ]/g, '').replace(/\s+/g, '-') === slug
     );
+    post.postBody = post.postBody.replace(/<br>/g, '\r\n');
     oPost = post.title
     if (post) {
         return { post };

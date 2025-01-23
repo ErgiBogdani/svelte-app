@@ -5,6 +5,10 @@
     let post = posts.find(post => post.title.toLocaleLowerCase().replace(/[^a-z0-9 ]/g, '').trim().replace(/\s+/g, '-') == data.params.slug)
 </script>
 
+<svelte:head>
+  <title>{post.title} | CIT Blog</title>
+</svelte:head>
+
 <style>
     img{
         width: 100%;

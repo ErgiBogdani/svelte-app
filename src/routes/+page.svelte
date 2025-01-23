@@ -7,6 +7,10 @@
     const recentPosts = posts.sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 5);
 </script>
 
+<svelte:head>
+  <title>CIT Blog</title>
+</svelte:head>
+
 <style>
     .carousel-item{
         height: 550px;

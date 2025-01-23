@@ -9,6 +9,9 @@
     }
 </style>
 
+<svelte:head>
+  <title>Create Post | CIT Blog</title>
+</svelte:head>
 
 <form method="POST" class="row g-3 p-5 mx-5 shadow-lg">
     <h1 class="h3 my-3 text-center">Create Post</h1>
