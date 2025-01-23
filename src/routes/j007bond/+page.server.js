@@ -7,9 +7,9 @@ export const actions = {
 		const data = await request.formData()
 		let title = data.get('title')
 		let img = data.get('img')
-		let postBody = data.get('postBody')
+		let postBody = data.get('postBody').replace(/\r\n/g, '<br>')
 		let tag = data.get('tag') == "" ? 'untaged' : data.get('tag')
-		let featured = data.has('featured') // Check if the checkbox is checked
+		let featured = data.has('featured')
 
 		let post = {
 			title,

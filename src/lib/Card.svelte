@@ -38,6 +38,12 @@
         .cont{
             width: 100% !important;
         }
+        .title-h {
+            height: fit-content;
+        }
+        .text-h {
+            height: fit-content;
+        }
     }
 </style>
 
@@ -49,7 +55,7 @@
         <p class="text-body-secondary fw-medium">{new Date(date).toLocaleDateString('en-UK')}</p>
           <h5 class="card-title title-h">{title}</h5>
           <p class="card-text text-h">
-            {text}
+            {text.replace(new RegExp("<br>", "g"), " ")}
             </p>
         </div>
       </div>

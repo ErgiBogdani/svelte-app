@@ -16,7 +16,7 @@
 {#if post != null}
 
 <div style="max-width: 720px; margin-left: auto; margin-right: auto;">
-    <a href="/posts" class="d-block fw-medium">Back to posts</a>
+    <a href="/posts" class="d-block fw-medium text-success">Back to posts</a>
 
     <img class="my-3" src={post.image} alt="blog">
 

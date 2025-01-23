@@ -39,25 +39,25 @@
 
 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active bg-white" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"  class="bg-white" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"  class="bg-white" aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
       <div id="c-img-1" class="carousel-item active">
-        <div class="carousel-caption mb-4 d-none d-md-block">
+        <div class="carousel-caption mb-4 d-block text-white">
           <h2>Welcome to my blog page!</h2>
           <p>Browse posts by featured tags or dates</p>
         </div>
       </div>
       <div id="c-img-2" class="carousel-item">
-        <div class="carousel-caption mb-4 d-none d-md-block">
+        <div class="carousel-caption mb-4 d-block text-white">
           <h2>Click on any Post!</h2>
           <p>Click any post tot see the full content</p>
         </div>
       </div>
       <div id="c-img-3" class="carousel-item">
-        <div class="carousel-caption mb-4 d-none d-md-block">
+        <div class="carousel-caption mb-4 d-block text-white">
           <h2>Manage posts!</h2>
           <p>Create and update posts using a secret code</p>
         </div>
@@ -75,7 +75,7 @@
 
   <div class="featured my-5">
     <h2 class="h3">Featured Posts</h2>
-    <div class="d-flex flex-row justify-content-start flex-wrap row-gap-5 column-gap-5 my-5">
+    <div class="d-flex flex-row justify-content-between flex-wrap row-gap-5 column-gap-5 my-5">
         {#each featuredPosts as post}
         <div class="featured-w">
             <HorizontalCard 
@@ -103,7 +103,7 @@
             />
             {/each}
         </div>
-        <a href="/posts" class="btn px-4 py-2 btn-primary fw-medium d-block mx-auto" style="width: fit-content;">View all posts</a>
+        <a href="/posts" class="btn px-4 py-2 bg-success text-light fw-medium d-block mx-auto" style="width: fit-content;">View all posts</a>
     </div>
   </div>
   

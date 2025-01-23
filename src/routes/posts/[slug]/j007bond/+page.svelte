@@ -1,12 +1,12 @@
 <script>
-    let {data} = $props(); // The data object loaded in +page.js
+    let {data} = $props(); 
     let post = data.post;
-    // Bind form fields to post data with fallbacks for safety
+
     let title = $state(post?.title || '');
     let img = $state(post?.image || '');
     let postBody = $state(post?.postBody || '');
     let tag = $state(post?.tag || '');
-    let featured = $state(post?.featured || false); // Boolean for checkbox
+    let featured = $state(post?.featured || false); 
 </script>
 
 <style>
@@ -57,7 +57,7 @@
       </div>
     </div>
     <div class="col-12 d-flex justify-content-center column-gap-3 flex-wrap row-gap-3">
-      <button type="submit" class="btn btn-primary px-5 py-2 fw-medium d-block">Update</button>
-      <button class="btn btn-danger px-5 py-2 fw-medium d-block" formaction="?/delete">Delete</button>
+      <button class="btn btn-outline-danger px-5 py-2 fw-medium d-block" formaction="?/delete">Delete</button>
+      <button type="submit" class="btn btn-success px-5 py-2 fw-medium d-block">Update</button>
     </div>
   </form>
