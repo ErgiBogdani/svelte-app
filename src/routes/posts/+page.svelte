@@ -13,7 +13,7 @@
     }
 </style>
 
-<h2>Brose by Tag</h2>
+<h2>Browse by Tag</h2>
 {#each tags as tag}
 <div class="tag-section">
   <h3 class="py-3 h4 px-5 d-block text-center text-success mx-auto bg-success-subtle" style="width: fit-content; margin: 3rem 0">{tag.charAt(0).toUpperCase() + tag.slice(1)}</h3>
