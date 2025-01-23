@@ -45,21 +45,21 @@
     </div>
     <div class="carousel-inner">
       <div id="c-img-1" class="carousel-item active">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
+        <div class="carousel-caption mb-4 d-none d-md-block">
+          <h2>Welcome to my blog page!</h2>
+          <p>Browse posts by featured tags or dates</p>
         </div>
       </div>
       <div id="c-img-2" class="carousel-item">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
+        <div class="carousel-caption mb-4 d-none d-md-block">
+          <h2>Click on any Post!</h2>
+          <p>Click any post tot see the full content</p>
         </div>
       </div>
       <div id="c-img-3" class="carousel-item">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
+        <div class="carousel-caption mb-4 d-none d-md-block">
+          <h2>Manage posts!</h2>
+          <p>Create and update posts using a secret code</p>
         </div>
       </div>
     </div>
@@ -103,6 +103,7 @@
             />
             {/each}
         </div>
+        <a href="/posts" class="btn px-4 py-2 btn-primary fw-medium d-block mx-auto" style="width: fit-content;">View all posts</a>
     </div>
   </div>
   
