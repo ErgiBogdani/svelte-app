@@ -86,7 +86,6 @@
             date={post.date}
             />
         </div>
-        
         {/each}
     </div>
 
@@ -106,4 +105,3 @@
         <a href="/posts" class="btn px-4 py-2 bg-success text-light fw-medium d-block mx-auto" style="width: fit-content;">View all posts</a>
     </div>
   </div>
-  
