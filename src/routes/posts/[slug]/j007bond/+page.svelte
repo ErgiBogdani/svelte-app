@@ -48,6 +48,6 @@
       </div>
     </div>
     <div class="col-12">
-      <button type="submit" class="btn btn-primary px-5 py-2 fw-medium d-block mx-auto">Create</button>
+      <button type="submit" class="btn btn-primary px-5 py-2 fw-medium d-block mx-auto">Update</button>
     </div>
   </form>
